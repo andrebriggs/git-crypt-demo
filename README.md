@@ -16,7 +16,6 @@ Generating key...
  2 files changed, 2 insertions(+)
  create mode 100644 .gitattributes
  create mode 100644 README.md
-not encrypted: config.secret
     <b>encrypted: config.secret.yaml</b>
 not encrypted: config.yaml
 not encrypted: .gitattributes

@@ -1,5 +1,0 @@
-myconfig:
-  region:
-    resources:
-      - name: "my cloud resource"
-        version: 1.0

@@ -1,5 +1,33 @@
-# Demo of git-crypt
+# git-crypt automated walkthrough
 
-See <https://github.com/AGWA/git-crypt>
-This is repo has secrets.
-This is repo has secrets.
+## Requirements
+
+Run `brew install git-crypt` to install [git-crypt](https://github.com/AGWA/git-crypt)
+
+## Instructions
+
+Run `sh demo-encryption.sh` and view the output. It will look something like this:
+
+<pre>
+$ sh example.sh
+Initialized empty Git repository in /private/var/folders/lj/9dqdzw193jg2jhjp9x19fyb00000gn/T/git-crypt-example.qadG8zCJ/.git/
+[master (root-commit) 56f46ae] Initial commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 README.md
+not encrypted: config.secret
+    <b>encrypted: config.secret.yaml</b>
+not encrypted: config.yaml
+not encrypted: .gitattributes
+not encrypted: README.md
+[master ec04ae9] Adding yaml files
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 config.secret.yaml
+ create mode 100644 config.yaml
+ </pre>
+
+ Notice that `config.secret.yaml` is encrypted but `config.yaml` is not. Examine the shell to discover how this is configured.
+
+## Use Cases
+
+ A pattern like this can be used in CI/CD orchestrations such as Azure DevOps pipelines to provide plain sight encryption to files. This could be useful in GitOps patterns where obfuscation via environment variables might not be preferred.

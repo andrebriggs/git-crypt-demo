@@ -3,4 +3,3 @@ myconfig:
     resources:
       - name: "my cloud resource"
         version: 1.0
-        password: "mysecret"

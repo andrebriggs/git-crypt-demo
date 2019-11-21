@@ -16,6 +16,9 @@ git commit -m "Initial commit"
 
 touch config.secret
 echo "Super duper secrets" >> config.secret
+git add config.secret
+
+git-crypt status
 
 git commit -m "Adding config.secret file"
 

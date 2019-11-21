@@ -27,7 +27,7 @@ not encrypted: README.md
  create mode 100644 config.yaml
  </pre>
 
- Notice that `config.secret.yaml` is encrypted but `config.yaml` is not. If we were to push the created git repo to a remote origin the `config.secret.yaml` file would be encrypted. You can see an example live repo [here](https://github.com/andrebriggs/secrets-demo-example)
+ Notice that `config.secret.yaml` is encrypted but `config.yaml` is not. If we were to push the created git repo to a remote origin the `config.secret.yaml` file would be encrypted. You can see an example live repo [here](https://github.com/andrebriggs/git-crypt-demo-example)
 
 ## Use Cases
 
